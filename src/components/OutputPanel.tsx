@@ -53,7 +53,13 @@ export function OutputPanel({
       <div className="rounded-3xl border border-nordic-border bg-nordic-bg p-4">
         <div className="mb-3 flex items-center justify-between gap-3">
           <p className="text-sm font-medium text-nordic-text">Generated password</p>
-          <Button type="button" variant="ghost" disabled={!password} onClick={handleCopy}>
+          <Button
+            type="button"
+            variant="ghost"
+            disabled={!password}
+            aria-label="Copy generated password"
+            onClick={handleCopy}
+          >
             {copied ? (
               <span className="inline-flex items-center gap-2">
                 <Check size={16} aria-hidden="true" />
@@ -67,7 +73,10 @@ export function OutputPanel({
             )}
           </Button>
         </div>
-        <div className="min-h-20 overflow-x-auto rounded-2xl border border-nordic-border bg-nordic-surface p-4 font-mono text-lg tracking-wide text-nordic-text">
+        <div
+          className="min-h-20 overflow-x-auto rounded-2xl border border-nordic-border bg-nordic-surface p-4 font-mono text-lg tracking-wide text-nordic-text"
+          aria-live="polite"
+        >
           {password || (
             <span className="font-sans text-sm tracking-normal text-nordic-muted">
               Your first password will appear here automatically.
@@ -85,7 +94,13 @@ export function OutputPanel({
       ) : null}
 
       <div className="grid gap-3 sm:grid-cols-2">
-        <Button type="button" variant="primary" disabled={!canGenerate} onClick={onGenerate}>
+        <Button
+          type="button"
+          variant="primary"
+          disabled={!canGenerate}
+          aria-label="Generate password"
+          onClick={onGenerate}
+        >
           <span className="inline-flex items-center gap-2">
             <WandSparkles size={16} aria-hidden="true" />
             Generate
@@ -94,6 +109,7 @@ export function OutputPanel({
         <Button
           type="button"
           disabled={!canGenerate || !hasGeneratedPassword}
+          aria-label="Regenerate password"
           onClick={onRegenerate}
         >
           <span className="inline-flex items-center gap-2">
@@ -105,6 +121,7 @@ export function OutputPanel({
           type="button"
           className="sm:col-span-2"
           disabled={!canGenerate}
+          aria-label="Generate 10 passwords"
           onClick={onGenerateMultiple}
         >
           <span className="inline-flex items-center gap-2">

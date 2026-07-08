@@ -82,7 +82,12 @@ export function PasswordHistory({ history }: PasswordHistoryProps) {
             </p>
             <p className="text-xs text-nordic-muted">{getRelativeTime(entry.createdAt)}</p>
           </div>
-          <Button type="button" variant="ghost" onClick={() => handleCopy(entry)}>
+          <Button
+            type="button"
+            variant="ghost"
+            aria-label="Copy history password"
+            onClick={() => handleCopy(entry)}
+          >
             {copiedId === entry.id ? (
               <span className="inline-flex items-center gap-2">
                 <Check size={16} aria-hidden="true" />
