@@ -31,6 +31,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
+  scroll-behavior: smooth;
   background:
     radial-gradient(circle at top left, rgba(91, 124, 153, 0.08), transparent 30rem),
     var(--bg-primary);
@@ -44,4 +45,9 @@ input {
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
+}
+
+::selection {
+  color: var(--text-primary);
+  background: rgba(91, 124, 153, 0.18);
 }

@@ -34,7 +34,12 @@ export function BulkResults({ passwords }: BulkResultsProps) {
           <p className="min-w-0 break-all font-mono text-sm text-nordic-text">
             {password}
           </p>
-          <Button type="button" variant="ghost" onClick={() => handleCopy(password, index)}>
+          <Button
+            type="button"
+            variant="ghost"
+            aria-label={`Copy bulk password ${index + 1}`}
+            onClick={() => handleCopy(password, index)}
+          >
             {copiedIndex === index ? (
               <span className="inline-flex items-center gap-2">
                 <Check size={16} aria-hidden="true" />

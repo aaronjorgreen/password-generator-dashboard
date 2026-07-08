@@ -343,11 +343,11 @@ password-generator-dashboard/
 - [x] All 10 appended to history within cap rules
 
 ### Phase 8 — Polish & Accessibility
-- [ ] Mobile-responsive layout (Settings → Output → Bulk → History)
-- [ ] Strength bar transition animation
-- [ ] `aria-live` region for strength/entropy updates
-- [ ] Focus-visible styles on all interactive elements
-- [ ] Final Nordic visual polish (spacing, borders, empty states)
+- [x] Mobile-responsive layout (Settings → Output → Bulk → History)
+- [x] Strength bar transition animation
+- [x] `aria-live` region for strength/entropy updates
+- [x] Focus-visible styles on all interactive elements
+- [x] Final Nordic visual polish (spacing, borders, empty states)
 
 ---
 

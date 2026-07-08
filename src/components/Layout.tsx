@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import { useId, type ReactNode } from 'react'
 
 type LayoutProps = {
   settings: ReactNode
@@ -47,10 +47,15 @@ export function Panel({
   description?: string
   children: ReactNode
 }) {
+  const titleId = useId()
+
   return (
-    <section className="rounded-3xl border border-nordic-border bg-nordic-surface p-6 shadow-card">
+    <section
+      aria-labelledby={titleId}
+      className="rounded-3xl border border-nordic-border bg-nordic-surface p-5 shadow-card sm:p-6"
+    >
       <div className="mb-6 space-y-2">
-        <h2 className="text-xl font-semibold tracking-[-0.02em] text-nordic-text">
+        <h2 id={titleId} className="text-xl font-semibold tracking-[-0.02em] text-nordic-text">
           {title}
         </h2>
         {description ? (
