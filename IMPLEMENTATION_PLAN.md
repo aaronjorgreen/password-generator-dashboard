@@ -320,14 +320,14 @@ password-generator-dashboard/
 - [x] Empty-pool validation + disabled strength state
 
 ### Phase 5 — Output & Strength UI
-- [ ] Strength indicator bar (colour-coded by tier)
-- [ ] Strength label display
-- [ ] Entropy (bits) display
-- [ ] Primary password output (monospace)
-- [ ] Generate button (disabled when pool empty)
-- [ ] Regenerate button (disabled until password exists)
-- [ ] One-click copy with inline feedback
-- [ ] Auto-generate on first load
+- [x] Strength indicator bar (colour-coded by tier)
+- [x] Strength label display
+- [x] Entropy (bits) display
+- [x] Primary password output (monospace)
+- [x] Generate button (disabled when pool empty)
+- [x] Regenerate button (disabled until password exists)
+- [x] One-click copy with inline feedback
+- [x] Auto-generate on first load
 
 ### Phase 6 — History & Persistence
 - [ ] Save passwords to history on generate (single + bulk)
