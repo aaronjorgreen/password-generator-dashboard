@@ -287,11 +287,11 @@ password-generator-dashboard/
 ## Progress Checklist
 
 ### Phase 1 — Project Scaffolding
-- [ ] Initialize Vite + React + TypeScript
-- [ ] Install and configure Tailwind CSS
-- [ ] Set up Nordic design tokens (colors, typography)
-- [ ] Create base Layout (desktop grid + mobile stack)
-- [ ] Dev server verified
+- [x] Initialize Vite + React + TypeScript
+- [x] Install and configure Tailwind CSS
+- [x] Set up Nordic design tokens (colors, typography)
+- [x] Create base Layout (desktop grid + mobile stack)
+- [x] Dev server verified
 
 ### Phase 2 — Types & Core Logic
 - [ ] `PasswordOptions`, `StrengthLevel`, `HistoryEntry` types defined
