@@ -303,10 +303,10 @@ password-generator-dashboard/
 - [x] `storage.ts` with graceful localStorage fallback
 
 ### Phase 3 — State & Hooks
-- [ ] `usePasswordOptions` hook
-- [ ] Memoised instant entropy recalc on settings change
-- [ ] `usePasswordHistory` hook
-- [ ] `usePasswordGenerator` hook (single, regenerate, bulk)
+- [x] `usePasswordOptions` hook
+- [x] Memoised instant entropy recalc on settings change
+- [x] `usePasswordHistory` hook
+- [x] `usePasswordGenerator` hook (single, regenerate, bulk)
 
 ### Phase 4 — Settings UI
 - [ ] Reusable Toggle component (accessible)
