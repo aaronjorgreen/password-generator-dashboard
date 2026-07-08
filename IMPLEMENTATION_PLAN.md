@@ -330,11 +330,11 @@ password-generator-dashboard/
 - [x] Auto-generate on first load
 
 ### Phase 6 — History & Persistence
-- [ ] Save passwords to history on generate (single + bulk)
-- [ ] Enforce 10-item cap (newest first)
-- [ ] History panel with masked preview
-- [ ] Per-row copy in history
-- [ ] Load history on mount from localStorage
+- [x] Save passwords to history on generate (single + bulk)
+- [x] Enforce 10-item cap (newest first)
+- [x] History panel with masked preview
+- [x] Per-row copy in history
+- [x] Load history on mount from localStorage
 
 ### Phase 7 — Generate Multiple
 - [ ] Generate 10 passwords at once
