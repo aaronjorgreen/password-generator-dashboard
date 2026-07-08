@@ -294,13 +294,13 @@ password-generator-dashboard/
 - [x] Dev server verified
 
 ### Phase 2 — Types & Core Logic
-- [ ] `PasswordOptions`, `StrengthLevel`, `HistoryEntry` types defined
-- [ ] Character pools with dedup + similar-char filter (O, 0, I, l)
-- [ ] Secure password generation (`crypto.getRandomValues`, unbiased sampling)
-- [ ] Charset guarantee (≥1 char per enabled pool)
-- [ ] Entropy calculation implemented
-- [ ] Strength classification (Weak / Medium / Strong / Very Strong)
-- [ ] `storage.ts` with graceful localStorage fallback
+- [x] `PasswordOptions`, `StrengthLevel`, `HistoryEntry` types defined
+- [x] Character pools with dedup + similar-char filter (O, 0, I, l)
+- [x] Secure password generation (`crypto.getRandomValues`, unbiased sampling)
+- [x] Charset guarantee (≥1 char per enabled pool)
+- [x] Entropy calculation implemented
+- [x] Strength classification (Weak / Medium / Strong / Very Strong)
+- [x] `storage.ts` with graceful localStorage fallback
 
 ### Phase 3 — State & Hooks
 - [ ] `usePasswordOptions` hook
