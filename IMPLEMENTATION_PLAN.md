@@ -309,15 +309,15 @@ password-generator-dashboard/
 - [x] `usePasswordGenerator` hook (single, regenerate, bulk)
 
 ### Phase 4 — Settings UI
-- [ ] Reusable Toggle component (accessible)
-- [ ] Reusable Slider component (accessible)
-- [ ] Length slider (8–64) with live value label
-- [ ] Uppercase toggle
-- [ ] Lowercase toggle
-- [ ] Numbers toggle
-- [ ] Special characters toggle
-- [ ] Exclude similar characters toggle (O, 0, I, l)
-- [ ] Empty-pool validation + disabled strength state
+- [x] Reusable Toggle component (accessible)
+- [x] Reusable Slider component (accessible)
+- [x] Length slider (8–64) with live value label
+- [x] Uppercase toggle
+- [x] Lowercase toggle
+- [x] Numbers toggle
+- [x] Special characters toggle
+- [x] Exclude similar characters toggle (O, 0, I, l)
+- [x] Empty-pool validation + disabled strength state
 
 ### Phase 5 — Output & Strength UI
 - [ ] Strength indicator bar (colour-coded by tier)

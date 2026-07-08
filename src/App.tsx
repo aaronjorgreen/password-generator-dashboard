@@ -1,16 +1,22 @@
 import { Layout, Panel } from './components/Layout'
+import { SettingsPanel } from './components/SettingsPanel'
+import { usePasswordOptions } from './hooks/usePasswordOptions'
 
 function App() {
+  const { options, updateOption, poolSize } = usePasswordOptions()
+
   return (
     <Layout
       settings={
         <Panel
           title="Settings"
-          description="Length, character sets, and ambiguity controls will live here."
+          description="Tune length, character sets, and ambiguity filters."
         >
-          <div className="rounded-2xl border border-dashed border-nordic-border bg-nordic-bg p-5 text-sm text-nordic-muted">
-            Phase 4 will replace this placeholder with accessible controls.
-          </div>
+          <SettingsPanel
+            options={options}
+            poolSize={poolSize}
+            onOptionChange={updateOption}
+          />
         </Panel>
       }
       output={
