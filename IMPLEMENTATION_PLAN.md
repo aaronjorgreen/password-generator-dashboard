@@ -337,10 +337,10 @@ password-generator-dashboard/
 - [x] Load history on mount from localStorage
 
 ### Phase 7 — Generate Multiple
-- [ ] Generate 10 passwords at once
-- [ ] `BulkResults` section (hidden until used)
-- [ ] Individual copy per bulk password
-- [ ] All 10 appended to history within cap rules
+- [x] Generate 10 passwords at once
+- [x] `BulkResults` section (hidden until used)
+- [x] Individual copy per bulk password
+- [x] All 10 appended to history within cap rules
 
 ### Phase 8 — Polish & Accessibility
 - [ ] Mobile-responsive layout (Settings → Output → Bulk → History)

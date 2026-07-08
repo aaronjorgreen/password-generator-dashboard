@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { BulkResults } from './components/BulkResults'
 import { Layout, Panel } from './components/Layout'
 import { OutputPanel } from './components/OutputPanel'
 import { PasswordHistory } from './components/PasswordHistory'
@@ -58,6 +59,16 @@ function App() {
             onGenerateMultiple={() => generator.generateMultiple(10)}
           />
         </Panel>
+      }
+      bulk={
+        generator.bulkPasswords.length > 0 ? (
+          <Panel
+            title="Bulk Results"
+            description="Ten generated passwords from the latest bulk run."
+          >
+            <BulkResults passwords={generator.bulkPasswords} />
+          </Panel>
+        ) : null
       }
       history={
         <Panel
